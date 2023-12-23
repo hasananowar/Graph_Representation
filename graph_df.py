@@ -14,6 +14,7 @@ def extract_edges(nodes, distance_threshold):
 # Load nodes for all timesteps from a .npy file
 filepath = '/home/mhanowar/Downloads/dataframe100frames.csv'  # Replace with the actual file path
 df = pd.read_csv(filepath)
+# interesting atoms
 atom_types = ['o', 'os', 'n', 'hn']
 df_nodes = df.query('Atom_Type in @atom_types').reset_index(drop=True)
 df_nodes
